@@ -103,9 +103,4 @@ STATICFILES_DIRS = (
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 
 # Applications specific data
-DATA={
-"NAME" : "Sagar Kaushik",
-"ABOUT_ME" : "Hello i'm sagar kauhsik, i love competetive programming, my fav language is Python and i love watching Movies and Web-Series.",
-"LANGUAGE" : ['Python','JavaScipt','C'],
-"PROJECT" : ['Student Management API','Emojifier','Polling Application','Smart Calc']
-}
+DATA=json.load(open(os.path.join(BASE_DIR,'data.json')))
