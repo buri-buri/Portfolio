@@ -1,7 +1,5 @@
-
-
 import os
-
+import json
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -103,3 +101,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static'),
 )
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+
+# Applications specific data
+DATA={
+"NAME" : "Sagar Kaushik",
+"ABOUT_ME" : "Hello i'm sagar kauhsik, i love competetive programming, my fav language is Python and i love watching Movies and Web-Series.",
+"LANGUAGE" : ['Python','JavaScipt','C'],
+"PROJECT" : ['Student Management API','Emojifier','Polling Application','Smart Calc']
+}
